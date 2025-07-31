@@ -39,6 +39,8 @@ class WorkOutScreen extends StatelessWidget {
 }
 
 class WorkOutList extends StatefulWidget {
+  const WorkOutList({super.key});
+
   @override
   _WorkOutListState createState() => _WorkOutListState();
 }
@@ -91,7 +93,7 @@ class WorkoutCard extends StatelessWidget {
             ),
           ),
 
-          Container(
+          SizedBox(
             height: 200,
             child: Lottie.asset(
               workout.animationAsset,
